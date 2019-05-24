@@ -17,7 +17,7 @@ This version adds a couple refinements, namely:
 * 'esc' key exits the script.
 
 Future Improvements:
-* Display keymap while playing.
+* Display keymap while playing. (with visual feedback?)
 * Fix note frequencies to better resemble an octave.
 * Create octave up/down function.
 * Make keys assignable by user.
