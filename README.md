@@ -1,14 +1,13 @@
 # play-piano
 PowerShell script that turns your keyboard into a (console beep) piano.
 
-Keys & Notes: (frequency #'s in Hz) |frq|
-                                    |key|
-
-  |300|345|   |405|460|505|   |605|670|
-  | 2 | 3 |   | 5 | 6 | 7 |   | 9 | 0 |
+Keys & Notes: (frequency #'s in Hz)
+```
+  |300|345|   |405|460|505|   |605|670|     |frq|
+  | 2 | 3 |   | 5 | 6 | 7 |   | 9 | 0 |     |key|
 |290|330|360|390|440|480|530|580|630|700|
 | Q | W | E | R | T | Y | U | I | O | P |
-
+```
 
 Originally created by Dr Scripto and published on The Scripting Guy (Ed Wilson)'s blog.
 This version adds a couple refinements, namely:
