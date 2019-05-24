@@ -49,8 +49,6 @@ DO {
     ##Play Note
     [Console]::Beep($Note,200)
 
-    ##Store Note
-
 } Until ($false)
 }
 &play
