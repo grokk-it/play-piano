@@ -7,6 +7,9 @@ Keys & Notes: (frequency #'s in Hz)
   | 2 | 3 |   | 5 | 6 | 7 |   | 9 | 0 |     |key|
 |290|330|360|390|440|480|530|580|630|700|
 | Q | W | E | R | T | Y | U | I | O | P |
+
+|   |
+|esc| to quit
 ```
 Pressing a `|key|` produces a console beep with `|frq|` frequency.
 
