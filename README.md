@@ -18,15 +18,16 @@ This version adds a couple refinements, namely:
 
 * Avoids error created by unused keys by packing the playback into a function and restarting the function if an unused key is pressed.
 * 'esc' key exits the script.
+* Display keymap while playing.
 
 Future Improvements:
-* Display keymap while playing. (with visual feedback?)
 * Fix note frequencies to better resemble an octave.
 * Create octave up/down function.
 * Make keys assignable by user.
 * Allow tempo & note playback time to be set by user.
 * Input pre-scripted note files via pipe or Get-Contents.
 * Create, edit & save note files inside script.
+* Active visual feedback for keypress on keymap (?)
 * Use runspaces to activate the beep in parallel, allowing for playing of chords and notes in parallel (?)
 * Audio distortion (?)
 * Sustain functionality (?)
