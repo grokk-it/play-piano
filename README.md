@@ -8,6 +8,7 @@ Keys & Notes: (frequency #'s in Hz)
 |290|330|360|390|440|480|530|580|630|700|
 | Q | W | E | R | T | Y | U | I | O | P |
 ```
+Pressing a `|key|` produces a console beep with `|frq|` frequency.
 
 Originally created by Dr Scripto and published on The Scripting Guy (Ed Wilson)'s blog.
 This version adds a couple refinements, namely:
