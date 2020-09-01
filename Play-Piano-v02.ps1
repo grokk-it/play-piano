@@ -38,31 +38,32 @@ $piano+=@{"P"=700}
 
 ##DISPLAY KEYMAP
 function showkeymap {
-    clear
-    echo "|QUIT"
-    echo "|esc|"
-    echo "|   |   |300|345|   |405|460|505|   |605|670|"
-    echo "|   |   | 2 | 3 |   | 5 | 6 | 7 |   | 9 | 0 |"
-    echo "|     |290|330|360|390|440|480|530|580|630|700|"
-    echo "|     | Q | W | E | R | T | Y | U | I | O | P |"
+    Clear-Host
+    Write-Output "|QUIT"
+    Write-Output "|esc|"
+    Write-Output "|   |   |300|345|   |405|460|505|   |605|670|"
+    Write-Output "|   |   | 2 | 3 |   | 5 | 6 | 7 |   | 9 | 0 |"
+    Write-Output "|     |290|330|360|390|440|480|530|580|630|700|"
+    Write-Output "|     | Q | W | E | R | T | Y | U | I | O | P |"
 }
+
 ##PLAY THE PIANO
 function play {
-DO {
-    &showkeymap
+    DO {
+        &showkeymap
 
-    ##Get Input
-    $Key=$HOST.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
-    if ($Key.VirtualKeyCode -eq '27') { exit }
-    $HOST.UI.RawUI.Flushinputbuffer()
-    $Note=$piano.($Key.Character)
-    if ($Null -eq $Note) { &play }
+        ##Get Input
+        $Key=$HOST.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+        if ($Key.VirtualKeyCode -eq '27') { exit }
+        $HOST.UI.RawUI.Flushinputbuffer()
+        $Note=$piano.($Key.Character)
+        if ($Null -eq $Note) { &play }
 
-    ##Play Note
-    [Console]::Beep($Note,200)
+        ##Play Note
+        [Console]::Beep($Note,200)
 
-    ##Store Note
+        ##Store Note
 
-} Until ($false)
+    } Until ($false)
 }
 &play
